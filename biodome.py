@@ -109,7 +109,6 @@ environ = _Environ()
 @contextlib.contextmanager
 def env_change(name, value):
     """Context manager to temporarily change the value of an env var."""
-    # TODO: move this upstream to the biodome package
     if name in environ:
         old = environ[name]
 
